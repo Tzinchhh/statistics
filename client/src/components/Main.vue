@@ -22,7 +22,7 @@
           </router-link>
         </template>
         <template v-if="col.status === 'NO_DATA'">
-          <router-link :to="{path: '/main/no'}">
+          <router-link :to="{path: '/main/not-found'}">
             <i class="fas fa-minus">
             </i>
           </router-link>

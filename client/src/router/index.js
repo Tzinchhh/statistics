@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Main from '@/components/Main'
-import Id from '@/components/Id'
-import No from '@/components/No'
+import QuestInfo from '@/components/quest-info'
+import NotFound from '@/components/not-found'
 
 Vue.use(Router)
 
@@ -16,13 +16,13 @@ export default new Router({
     },
     {
       path: '/main/:alias/:globalId',
-      name: 'id',
-      component: Id
+      name: 'QuestInfo',
+      component: QuestInfo
     },
     {
-      path: '/main/no',
-      name: 'no',
-      component: No
+      path: '/main/not-found',
+      name: 'NotFound',
+      component: NotFound
     }
   ]
 })
